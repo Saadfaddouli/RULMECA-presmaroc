@@ -1,0 +1,447 @@
+/* Section Réalité du marché — timeline verticale centrale : tags au centre, cartes alternées gauche/droite */
+
+.market-reality-section {
+  scroll-margin-top: 0;
+}
+
+.timeline_body {
+  position: relative;
+  background: #fff;
+  overflow: visible;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .timeline_body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Conteneur timeline : ligne verticale au centre. direction: ltr = 1re colonne à GAUCHE. */
+.bioLine {
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  direction: ltr;
+}
+
+.bioLine::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, hsl(var(--rulmeca-border)) 10%, hsl(var(--rulmeca-border)) 90%, transparent);
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Comme hero_codepen_idea : display:table + table-cell = alternance garantie (1ère cellule = gauche, 2e = centre, 3e = droite) */
+.bioYear {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  position: relative;
+  z-index: 1;
+  min-height: 60vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 1px dashed transparent;
+  overflow: visible;
+}
+
+.bioYear:first-child {
+  padding-top: 32px;
+  border-top: none;
+}
+
+.bioYear:last-child {
+  padding-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .bioYear {
+    min-height: 55vh;
+  }
+}
+
+/* bioLeft / bioRight = table-cell : 1ère cellule = GAUCHE, 3e = DROITE (ordre du doc) */
+.bioYear_slot {
+  display: table-cell;
+  vertical-align: top;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.bioYear_slot--left {
+  width: 45%;
+  padding-right: 16px;
+}
+
+.bioYear_slot--right {
+  width: 45%;
+  padding-left: 16px;
+}
+
+/* Wrapper flex : carte descend un peu sous le tag central */
+.bioYear_slot-inner {
+  display: flex;
+  min-width: 0;
+  padding-top: 90px;
+}
+
+.bioYear_slot-inner--left {
+  justify-content: flex-end;
+}
+
+.bioYear_slot-inner--right {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .bioYear_slot--left {
+    padding-right: 24px;
+  }
+  .bioYear_slot--right {
+    padding-left: 24px;
+  }
+}
+
+/* Rail central = 2e cellule (tag au centre), largeur minimale */
+.bioYear_rail {
+  display: table-cell;
+  width: 80px;
+  min-width: 80px;
+  vertical-align: top;
+  position: relative;
+  padding-top: 0;
+  text-align: center;
+}
+
+.bioLine_segment {
+  display: none; /* la ligne est sur .bioLine::before */
+}
+
+/* Tag central = pilule rouge (motion via Framer) */
+.bioYear_tag {
+  display: inline-block;
+  padding: 10px 18px;
+  background: hsl(var(--rulmeca-red));
+  color: #fff;
+  text-align: center;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+@media (min-width: 768px) {
+  .bioYear_tag {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    max-width: 280px;
+  }
+}
+
+/* Carte : image (ratio 5:4) + texte en bas, toujours en colonne */
+.market-reality-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 12px 32px -8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+}
+
+.market-reality-card_media {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+}
+
+.market-reality-card_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.market-reality-card_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
+}
+
+.market-reality-card_texture {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.market-reality-card_tags {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+
+/* Tags sur les cartes : léger transparent (glass) + animation Framer */
+.market-reality-tag {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.7);
+  color: hsl(var(--rulmeca-text));
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .market-reality-tag {
+    font-size: 0.75rem;
+    padding: 8px 14px;
+  }
+}
+
+.market-reality-card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+}
+
+.market-reality-card_block {
+  padding: 0.75rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .market-reality-card_block {
+    padding: 1rem 1.25rem;
+  }
+}
+
+.market-reality-card_block p {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: hsl(var(--rulmeca-text));
+}
+
+.market-reality-card_block--context {
+  border-bottom: 1px solid hsl(var(--rulmeca-border));
+}
+
+.market-reality-card_block--context p {
+  color: hsl(var(--rulmeca-muted));
+}
+
+.market-reality-card_block--message p {
+  font-weight: 500;
+  color: hsl(var(--rulmeca-text));
+}
+
+.market-reality-card_media::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.08), transparent);
+  pointer-events: none;
+}
+
+.market-reality-title {
+  font-family: var(--font-display, 'Orbitron', 'Rajdhani', 'Exo 2', sans-serif);
+}
+
+/* ——— Bloc ambition : pleine hauteur + carreaux ——— */
+.market-reality-ambition {
+  position: relative;
+  min-height: 80vh;
+  border-top: 1px solid hsl(var(--rulmeca-border));
+  background: hsl(var(--rulmeca-alt));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.market-reality-ambition::before {
+  --size: 45px;
+  --line: color-mix(in hsl, hsl(var(--rulmeca-text)), transparent 88%);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--line) 1px, transparent 1px var(--size)) calc(var(--size) * 0.36) 50% / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0% calc(var(--size) * 0.32) / var(--size) var(--size);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.market-reality-ambition_message {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ——— Keypad (tel quel, inspiré CodePen) ——— */
+.market-reality-ambition .keypad {
+  --travel: 20;
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 400 / 310;
+  display: flex;
+  place-items: center;
+  width: clamp(280px, 35vw, 400px);
+  -webkit-tap-highlight-color: transparent;
+  transition: translate 0.26s ease-out, transform 0.26s ease-out;
+  transform-style: preserve-3d;
+}
+
+.market-reality-ambition .keypad .key {
+  transform-style: preserve-3d;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.market-reality-ambition .keypad .key[data-pressed="true"] .key__content,
+.market-reality-ambition .keypad .key:active .key__content {
+  translate: 0 calc(var(--travel) * 1%);
+}
+
+.market-reality-ambition .keypad .key__content {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  transition: translate 0.12s ease-out;
+  container-type: inline-size;
+}
+
+.market-reality-ambition .keypad .keypad__single .key__text {
+  width: 52%;
+  height: 62%;
+  translate: 45% -16%;
+}
+
+.market-reality-ambition .keypad .key__text {
+  height: 46%;
+  width: 86%;
+  position: absolute;
+  font-size: 12cqi;
+  z-index: 21;
+  top: 5%;
+  left: 0;
+  color: hsl(0 0% 94%);
+  translate: 8% 10%;
+  transform: rotateX(36deg) rotateY(45deg) rotateX(-90deg) rotate(0deg);
+  text-align: left;
+  padding: 1ch;
+}
+
+.market-reality-ambition .keypad .keypad__single {
+  position: absolute;
+  width: 40.5%;
+  left: 54%;
+  bottom: 36%;
+  height: 46%;
+  clip-path: polygon(0 0, 54% 0, 89% 24%, 100% 70%, 54% 100%, 46% 100%, 0 69%, 12% 23%, 47% 0);
+  mask: url(https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86) 50% 50% / 100% 100%;
+  -webkit-mask: url(https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86) 50% 50% / 100% 100%;
+}
+
+.market-reality-ambition .keypad .keypad__single--left {
+  left: 29.3%;
+  bottom: 54.2%;
+}
+
+.market-reality-ambition .keypad .keypad__single .key__text {
+  font-size: 18cqi;
+}
+
+.market-reality-ambition .keypad .keypad__single img {
+  top: 0;
+  opacity: 1;
+  width: 96%;
+  position: absolute;
+  left: 50%;
+  translate: -50% 1%;
+}
+
+.market-reality-ambition .keypad .key__mask {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.market-reality-ambition .keypad .keypad__double {
+  position: absolute;
+  width: 64%;
+  height: 65%;
+  left: 6%;
+  bottom: 17.85%;
+  clip-path: polygon(34% 0, 93% 44%, 101% 78%, 71% 100%, 66% 100%, 0 52%, 0 44%, 7% 17%, 30% 0);
+  mask: url(https://assets.codepen.io/605876/keypad-double.png?format=auto&quality=86) 50% 50% / 100% 100%;
+  -webkit-mask: url(https://assets.codepen.io/605876/keypad-double.png?format=auto&quality=86) 50% 50% / 100% 100%;
+}
+
+.market-reality-ambition .keypad .keypad__double img {
+  top: 0;
+  opacity: 1;
+  width: 99%;
+  position: absolute;
+  left: 50%;
+  translate: -50% 1%;
+}
+
+.market-reality-ambition .keypad .key img {
+  filter: hue-rotate(calc(var(--hue, 0) * 1deg)) saturate(var(--saturate, 1)) brightness(var(--brightness, 1));
+}
+
+.market-reality-ambition .keypad .keypad__base {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.market-reality-ambition .keypad .keypad__base img {
+  width: 100%;
+  display: block;
+}
+
+.market-reality-intro .section-badge {
+  color: hsl(var(--rulmeca-muted));
+}

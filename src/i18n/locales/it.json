@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "openPresentation": "Apri presentazione",
+    "downloadSummary": "Scarica riepilogo",
+    "poweredBy": "Powered by RULMECA"
+  },
+  "hero": {
+    "line": "Strutturazione ufficio RULMECA — Marocco",
+    "mainTitle": "ABILIS INDUS",
+    "mainTitleHighlight": "Impianto & Sviluppo Territoriale",
+    "subtitle": "Piano strategico di attivazione e rappresentanza.",
+    "cta": "Entra nella presentazione"
+  },
+  "geo": {
+    "title": "Copertura territoriale",
+    "sitesStrategiques": "Siti strategici",
+    "segmentsActifs": "Segmenti attivi",
+    "statut": "Stato",
+    "phaseImplantation": "Fase di impianto",
+    "activeTargets": "Siti attivi",
+    "potentialPlacement": "Potenziale",
+    "actionsEngaged": "Azioni impegnate",
+    "budgetMAD": "Budget MAD",
+    "addToPlanning": "Aggiungi alla pianificazione",
+    "filters": { "segment": "Segmento", "potential": "Potenziale", "status": "Stato", "region": "Regione" },
+    "segments": { "mines": "Miniere", "carrieres": "Cave", "cimenteries": "Cementifici" },
+    "status": { "prospect": "Prospect", "essai": "Prova", "validation": "Validazione", "deploiement": "Distribuzione" }
+  },
+  "chapters": {
+    "visionCadre": { "title": "Visione & Quadro", "subtitle": "Visione, missione locale, quadro di strutturazione, ambizione territoriale." },
+    "marcheOpportunite": { "title": "Mercato & Opportunità", "subtitle": "Contesto di mercato e opportunità target." },
+    "structurationLocale": { "title": "Strutturazione locale", "subtitle": "Organizzazione e radicamento territoriale." },
+    "couvertureTerritoriale": { "title": "Copertura territoriale", "subtitle": "Mappatura e sviluppo geografico." },
+    "planMarketing": { "title": "Piano marketing", "subtitle": "Azioni e leve marketing." },
+    "planCommercialTerrain": { "title": "Piano commerciale sul campo", "subtitle": "Sviluppo commerciale e pipeline." },
+    "organisationMoyens": { "title": "Organizzazione & mezzi", "subtitle": "Team, logistica, capacità." },
+    "feuilleRoute": { "title": "Roadmap", "subtitle": "Calendario e milestone di esecuzione." },
+    "engagementInvestissement": { "title": "Impegno & investimento", "subtitle": "Budget e impegni finanziari." }
+  },
+  "actions": {
+    "marketing": "Marketing",
+    "commercial": "Commerciale",
+    "budget": "Budget",
+    "deliverables": "Consegnabili",
+    "kpis": "KPI",
+    "status": "Stato",
+    "owner": "Responsabile"
+  },
+  "planning": {
+    "title": "Roadmap",
+    "export": "Esporta riepilogo",
+    "filter": "Filtra per segmento/città"
+  }
+}

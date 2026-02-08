@@ -1,0 +1,114 @@
+{
+  "story": {
+    "sectionLabel": "Histoire ABILIS",
+    "badge": "Notre parcours",
+    "mainTitle": "Histoire",
+    "subtitle": "ABILIS",
+    "intro": "De nos débuts automobile à la représentation RULMECA au Maroc.",
+    "2019": {
+      "title": "ABILIS — Débuts automobile",
+      "short": "Représentant WHEELSECURE dans le domaine automobile."
+    },
+    "2024": {
+      "title": "BTA Services",
+      "short": "Association avec le bureau central d'approvisionnement en France. Capacité de financement et garant des approvisionnements."
+    },
+    "2026": {
+      "title": "ABILIS INDUSTRIE",
+      "short": "Création pour développer l'activité auprès des industriels : minier, BTP."
+    },
+    "bureau": {
+      "title": "Le bureau au Maroc",
+      "short": "Capacités, ambition et structure pour représenter la marque sur le marché marocain."
+    },
+    "202603": {
+      "title": "Représentation RULMECA au Maroc",
+      "short": "2026-03 : représentation officielle RULMECA face au marché marocain."
+    }
+  },
+  "nav": {
+    "openPresentation": "Ouvrir la présentation",
+    "downloadSummary": "Télécharger résumé",
+    "poweredBy": "Powered by RULMECA"
+  },
+  "hero": {
+    "line": "Structuration du bureau RULMECA — Maroc",
+    "mainTitle": "ABILIS INDUS",
+    "mainTitleHighlight": "Implantation & Déploiement Territorial",
+    "subtitle": "Plan stratégique d'activation et de représentation.",
+    "cta": "Entrer dans la présentation"
+  },
+  "geo": {
+    "title": "Couverture territoriale",
+    "sitesStrategiques": "Sites stratégiques",
+    "segmentsActifs": "Segments actifs",
+    "statut": "Statut",
+    "phaseImplantation": "Phase d'implantation",
+    "activeTargets": "Sites actifs",
+    "potentialPlacement": "Potentiel",
+    "actionsEngaged": "Actions engagées",
+    "budgetMAD": "Budget MAD",
+    "addToPlanning": "Ajouter au planning",
+    "filters": { "segment": "Segment", "potential": "Potentiel", "status": "Statut", "region": "Région" },
+    "segments": { "mines": "Mines", "carrieres": "Carrières", "cimenteries": "Cimenteries" },
+    "status": { "prospect": "Prospect", "essai": "Essai", "validation": "Validation", "deploiement": "Déploiement" },
+    "sidebar": { "navigation": "Filtres", "all": "Tous", "phaseImplantation": "Phase implantation" },
+    "kpi": { "sitesActifs": "Sites actifs", "enValidation": "En validation", "enDeploiement": "En déploiement", "potentielMoyen": "Potentiel moyen" },
+    "insight": { "siteDetail": "Détail site", "city": "Ville", "segment": "Segment", "status": "Statut", "scorePotentiel": "Score potentiel", "nextAction": "Prochaine action" },
+    "map": { "serversActive": "Sites actifs", "geolocationSubtitle": "Géolocalisation des sites stratégiques." }
+  },
+  "chapters": {
+    "visionCadre": { "title": "Vision & Cadre", "subtitle": "Vision, mission locale, cadre de structuration, ambition territoriale." },
+    "marcheOpportunite": { "title": "Marché & Opportunité", "subtitle": "Contexte marché et opportunités ciblées." },
+    "structurationLocale": { "title": "Structuration locale", "subtitle": "Organisation et ancrage territorial." },
+    "couvertureTerritoriale": { "title": "Couverture territoriale", "subtitle": "Cartographie et déploiement géographique." },
+    "planMarketing": { "title": "Plan marketing", "subtitle": "Actions et leviers marketing." },
+    "planCommercialTerrain": { "title": "Plan commercial terrain", "subtitle": "Déploiement commercial et pipeline." },
+    "organisationMoyens": { "title": "Organisation & moyens", "subtitle": "Équipe, logistique, capacités." },
+    "feuilleRoute": { "title": "Feuille de route", "subtitle": "Calendrier et jalons d'exécution." },
+    "engagementInvestissement": { "title": "Engagement & investissement", "subtitle": "Budget et engagements financiers." }
+  },
+  "actions": {
+    "marketing": "Marketing",
+    "commercial": "Commercial",
+    "budget": "Budget",
+    "deliverables": "Livrables",
+    "kpis": "KPI",
+    "status": "Statut",
+    "owner": "Responsable"
+  },
+  "planning": {
+    "title": "Feuille de route",
+    "export": "Exporter résumé",
+    "filter": "Filtrer par segment/ville"
+  },
+  "marketReality": {
+    "sectionLabel": "Réalité du marché marocain",
+    "badge": "Marché & positionnement",
+    "title": "Réalité du marché marocain",
+    "intro": "Défis et troubles du marché que RULMECA contourne — le fournisseur s'y reconnaît et a besoin d'un partenaire de confiance.",
+    "ambition": "ABILIS Industrie : votre partenaire structurant sur le marché marocain. Interface locale, sourcing sécurisé, garantie financière — fiabilité long terme.",
+    "timeline": {
+      "contrefacon": {
+        "theme": "Contrefaçon",
+        "left": "Rouleaux présentés comme RULMECA d'origine.",
+        "right": "ABILIS assure représentation officielle et garantie d'origine."
+      },
+      "trahisonConfiance": {
+        "theme": "Trahison confiance",
+        "left": "Engagements financiers non honorés à l'approvisionnement.",
+        "right": "ABILIS apporte garantie financière et traçabilité des engagements."
+      },
+      "blocagesLogistiques": {
+        "theme": "Blocages logistiques",
+        "left": "Produits bloqués au port, douane et import non honorés.",
+        "right": "Bureau local structuré évite ces blocages."
+      },
+      "productionLocale": {
+        "theme": "Production locale à faible qualité",
+        "left": "Concurrence locale sans suivi des standards.",
+        "right": "ABILIS et RULMECA garantissent qualité et conformité."
+      }
+    }
+  }
+}
