@@ -3,7 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslation } from "react-i18next";
 import { Car, Package, Factory, Building2, Flag, type LucideIcon } from "lucide-react";
-import { abilisStorySteps } from "@/data/mock";
+import { abilisStorySteps as allAbilisStorySteps } from "@/data/mock";
+
+// Garder uniquement : 2021, 2022, Mars 2026 (exclure Implantation Amérique, Centrales d'achat France, Pénétration secteur minier Wheelsecure)
+const abilisStorySteps = allAbilisStorySteps.filter(
+  (step) => step.id === "2021" || step.id === "2022" || step.id === "2026-03"
+);
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,7 +95,7 @@ const AbilisStorySection = () => {
       id="histoire-abilis"
       ref={sectionRef}
       className="relative h-screen overflow-hidden bg-[#F7F8FA]"
-      aria-label={t("story.sectionLabel", "Histoire ABILIS")}
+      aria-label={t("story.sectionLabel", "Qui sommes nous ABILIS")}
     >
       <div className="absolute inset-0 flex">
         {/* Colonne gauche : titre + intro (inspiration Travel guide) */}
@@ -98,14 +103,22 @@ const AbilisStorySection = () => {
           <span className="section-badge mb-3 inline-block text-xs font-medium uppercase tracking-wider text-[hsl(var(--rulmeca-muted))]">
             {t("story.badge", "Notre parcours")}
           </span>
-          <h2 className="text-4xl lg:text-5xl font-serif font-semibold text-[hsl(var(--rulmeca-text))] tracking-tight">
-            {t("story.mainTitle", "Histoire")}
-          </h2>
+          <div className="flex items-center gap-4 mb-1">
+            <span
+              className="inline-flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[hsl(var(--rulmeca-red))] text-white font-extrabold text-xl lg:text-2xl shadow-md flex-shrink-0"
+              aria-hidden
+            >
+              1
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-serif font-semibold text-[hsl(var(--rulmeca-text))] tracking-tight">
+              {t("story.mainTitle", "Qui sommes nous")}
+            </h2>
+          </div>
           <p className="mt-1 text-lg lg:text-xl font-medium text-[hsl(var(--rulmeca-text))] border-b-2 border-[#b30000]/30 pb-1 inline-block w-fit">
             {t("story.subtitle", "ABILIS")}
           </p>
           <p className="mt-6 text-sm lg:text-base text-[hsl(var(--rulmeca-muted))] leading-relaxed max-w-md">
-            {t("story.intro", "De nos débuts automobile à la représentation RULMECA au Maroc.")}
+            {t("story.intro", "Importateur et distributeur de la marque Wheeleseucre ( 1er bouclier anti-crevraison ) deuis 2021 au maroc")}
           </p>
         </div>
 

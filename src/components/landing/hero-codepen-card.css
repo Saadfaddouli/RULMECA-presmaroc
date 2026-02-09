@@ -127,6 +127,7 @@
   background: transparent;
 }
 
+/* Masque blanc léger en haut de l’entonnoir (shape funnel), pas sur la card */
 .hero-section-wrap .hero-codepen-card .container .orbs .hide-orb {
   --ax: calc((3 / 3.6) * var(--sz));
   position: absolute;
@@ -135,8 +136,15 @@
   width: 100%;
   height: 100%;
   border-radius: calc((1 / 3) * var(--sz));
-  /* Aucune ombre : pas de gris, fond invisible */
   box-shadow: none;
+  pointer-events: none;
+  /* Dégradé blanc léger en haut de l’entonnoir uniquement */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0.1) 22%,
+    transparent 45%
+  );
 }
 
 .hero-section-wrap .hero-codepen-card .container .orbs .orb {

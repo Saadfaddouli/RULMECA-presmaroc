@@ -287,6 +287,13 @@ import siteOCP from "@/assets/RULMECAASSETS/SITEOCP.jpeg";
 import siteMinier from "@/assets/RULMECAASSETS/SITEMINIER.jpeg";
 import siteCarriere from "@/assets/RULMECAASSETS/SITECARRIERE.jpeg";
 import siteManagem from "@/assets/RULMECAASSETS/SITEMANAGEM.jpeg";
+// Images Histoire ABILIS (steps)
+import firstStepImage from "@/assets/RULMECAASSETS/1firstStep.png";
+import step1History from "@/assets/RULMECAASSETS/step1history.png";
+import step2History from "@/assets/RULMECAASSETS/step2history.png";
+import step3History from "@/assets/RULMECAASSETS/Step3History.png";
+import step4History from "@/assets/RULMECAASSETS/Step4History.png";
+import step5History from "@/assets/RULMECAASSETS/Step5History.png";
 
 export const productImages = [
   rulmecaHero,
@@ -327,31 +334,31 @@ export interface AbilisStoryStep {
 
 export const abilisStorySteps: AbilisStoryStep[] = [
   {
-    id: "2019",
-    year: "2019",
-    titleKey: "story.2019.title",
-    shortTextKey: "story.2019.short",
+    id: "2021",
+    year: "2021",
+    titleKey: "story.2021.title",
+    shortTextKey: "story.2021.short",
     icon: "Car",
     circleColor: "#EAB308",
-    image: rulmecaHero,
+    image: firstStepImage,
   },
   {
-    id: "2024",
-    year: "2024",
-    titleKey: "story.2024.title",
-    shortTextKey: "story.2024.short",
-    icon: "Package",
+    id: "2022",
+    year: "2022",
+    titleKey: "story.2022.title",
+    shortTextKey: "story.2022.short",
+    icon: "Flag",
     circleColor: "#F97316",
-    image: homeBulk,
+    image: step2History,
   },
   {
-    id: "2026",
-    year: "2026",
-    titleKey: "story.2026.title",
-    shortTextKey: "story.2026.short",
-    icon: "Factory",
+    id: "2023",
+    year: "2023",
+    titleKey: "story.2023.title",
+    shortTextKey: "story.2023.short",
+    icon: "Flag",
     circleColor: "#3B82F6",
-    image: siteMinier,
+    image: step3History,
   },
   {
     id: "bureau",
@@ -360,16 +367,25 @@ export const abilisStorySteps: AbilisStoryStep[] = [
     shortTextKey: "story.bureau.short",
     icon: "Building2",
     circleColor: "#EC4899",
-    image: siteCarriere,
+    image: step4History,
+  },
+  {
+    id: "2026",
+    year: "2026",
+    titleKey: "story.2026.title",
+    shortTextKey: "story.2026.short",
+    icon: "Package",
+    circleColor: "#22C55E",
+    image: step5History,
   },
   {
     id: "2026-03",
-    year: "2026-03",
+    year: "Mars 2026",
     titleKey: "story.202603.title",
     shortTextKey: "story.202603.short",
-    icon: "Flag",
-    circleColor: "#22C55E",
-    image: ogImage,
+    icon: "Factory",
+    circleColor: "#b30000",
+    image: rulmecaHero,
   },
 ];
 
@@ -421,5 +437,79 @@ export const marketRealityTimelineSteps: MarketRealityTimelineStep[] = [
     imageLeft: qualiteLocalImg,
     imageRight: qualiteLocalImg,
     alertLabels: ["Qualité", "Standards", "Endurance"],
+  },
+];
+
+// Répartition par typologie — colonnes type Kanban (Cimenteries, Mines, OCP, Énergie)
+export type TypologyKey = "cimenteries" | "mines" | "ocp" | "energie";
+
+export type TypologyClientLogoKey =
+  | "ocp"
+  | "novacim"
+  | "managem"
+  | "lafarge"
+  | "cimentsDuMaroc"
+  | "cimat"
+  | "aya"
+  | "cmt"
+  | "sacem"
+  | "ofas"
+  | "safiec"
+  | "taqa"
+  | null;
+
+export type ProspectStatus = "new" | "inProgress" | "done";
+
+export interface TypologyClient {
+  id: string;
+  nameKey: string;
+  logoKey: TypologyClientLogoKey | null;
+  cityKey: string;
+  prospectStatus: ProspectStatus;
+  descriptionKey?: string;
+}
+
+export interface TypologyGroup {
+  key: TypologyKey;
+  labelKey: string;
+  clients: TypologyClient[];
+}
+
+export const typologyGroups: TypologyGroup[] = [
+  {
+    key: "cimenteries",
+    labelKey: "marketReality.typologyCimenteries",
+    clients: [
+      { id: "novacim", nameKey: "marketReality.clientNovacim", logoKey: "novacim", cityKey: "marketReality.citySafi", prospectStatus: "inProgress", descriptionKey: "marketReality.prospectNovacim" },
+      { id: "lafarge", nameKey: "marketReality.clientLafarge", logoKey: "lafarge", cityKey: "marketReality.cityCasablanca", prospectStatus: "done", descriptionKey: "marketReality.prospectLafarge" },
+      { id: "ciments-du-maroc", nameKey: "marketReality.clientCimentsDuMaroc", logoKey: "cimentsDuMaroc", cityKey: "marketReality.cityAgadir", prospectStatus: "inProgress", descriptionKey: "marketReality.prospectCimentsDuMaroc" },
+      { id: "cimat", nameKey: "marketReality.clientCimat", logoKey: "cimat", cityKey: "marketReality.citySettat", prospectStatus: "new", descriptionKey: "marketReality.prospectCimat" },
+    ],
+  },
+  {
+    key: "mines",
+    labelKey: "marketReality.typologyMines",
+    clients: [
+      { id: "managem", nameKey: "marketReality.clientManagem", logoKey: "managem", cityKey: "marketReality.cityMarrakech", prospectStatus: "done", descriptionKey: "marketReality.prospectManagem" },
+      { id: "aya", nameKey: "marketReality.clientAya", logoKey: "aya", cityKey: "marketReality.cityKhouribga", prospectStatus: "inProgress", descriptionKey: "marketReality.prospectAya" },
+      { id: "cmt", nameKey: "marketReality.clientCmt", logoKey: "cmt", cityKey: "marketReality.cityElJadida", prospectStatus: "new", descriptionKey: "marketReality.prospectCmt" },
+      { id: "sacem", nameKey: "marketReality.clientSacem", logoKey: "sacem", cityKey: "marketReality.cityBenguerir", prospectStatus: "inProgress", descriptionKey: "marketReality.prospectSacem" },
+    ],
+  },
+  {
+    key: "ocp",
+    labelKey: "marketReality.typologyOcp",
+    clients: [
+      { id: "ofas", nameKey: "marketReality.clientOfas", logoKey: "ofas", cityKey: "marketReality.cityKhouribga", prospectStatus: "done", descriptionKey: "marketReality.prospectOfas" },
+      { id: "ocp", nameKey: "marketReality.clientOcp", logoKey: "ocp", cityKey: "marketReality.cityCasablanca", prospectStatus: "done", descriptionKey: "marketReality.prospectOcp" },
+    ],
+  },
+  {
+    key: "energie",
+    labelKey: "marketReality.typologyEnergie",
+    clients: [
+      { id: "safiec", nameKey: "marketReality.clientSafiec", logoKey: "safiec", cityKey: "marketReality.citySafi", prospectStatus: "inProgress", descriptionKey: "marketReality.prospectSafiec" },
+      { id: "taqa", nameKey: "marketReality.clientTaqa", logoKey: "taqa", cityKey: "marketReality.cityCasablanca", prospectStatus: "new", descriptionKey: "marketReality.prospectTaqa" },
+    ],
   },
 ];

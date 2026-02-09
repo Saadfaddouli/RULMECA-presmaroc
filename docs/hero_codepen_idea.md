@@ -1,741 +1,498 @@
-html : 
+HTML : 
+
+<!--
+/********************************************/
+/********************************************/
+/* Please ❤ this if you like it! */
+/* Follow Me https://codepen.io/designfenix */
+/********************************************/
+/********************************************/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+-->
+<p class="dev">Developed with <span>❤</span> by <a href="https://codepen.io/designfenix/" target="_blank">Fernando Cohen</a> </p>
+<button onclick="var el = document.querySelector('body'); el.requestFullscreen();">
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize">
+		<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+	</svg>
+</button>
+<div class="wrapper-images">
+	<!-- 5 images by row -->
+	<div class="images-line">
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+	</div>
+	<!-- 5 images by row -->
+	<div class="images-line">
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+	</div>
+	<!-- 5 images by row -->
+	<div class="images-line">
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+	</div>
+
+	<!-- 5 images by row -->
+	<div class="images-line">
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7B1BF88E4AD4A07C0DF489ACCA234032BB719C2757BC44FC58B6E782C188D77D/scale?width=500&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52AB5D97F245DD6F0A007347504D736C914C474EB5EECFD1955789065662CC5F/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C47B65BB35697D58EFA4C776C4D93DA9F2DBCF24195413CE664F241441142721/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2BB63ED859DC9CCFEFE1A6A239F2A3DD26C34718F3046891AB97E16D620D7360/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal)"></div>
+		</div>
+	</div>
+	<!-- 5 images by row -->
+	<div class="images-line">
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB81FFA55537B7021F8656FF0BE79D5A5153EA25C2474A83BFAB6E714E81CB53/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BD6265B65C2956ACCB44E13778A5A67DB2E7786DA88768654E1F53D1F44B907/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B44FE70953E3765853134FE4C632C4C25D51D1DDF5DCB4F4105B419D410FFE19/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59CBA35AB929C8A53706D0412754BD7A338BB37813D104DBEAF69444D5ABF79D/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FE9AA3E685B55B382DDBF77DA3E679DA343A70FC1308837D6E2296459E03F417/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+	</div>
+	<!-- 5 images by row -->
+	<div class="images-line">
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9C5F8728CD265CD3C22B3F6356B2514F3C112D9B874D1553665C0855702B1BB3/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7FDD68992FA1EA5F6B0B09D7C4D170908EF457ECEBE1808A170CBE8EA36F5FD/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EEE09E81171ED8EBF20FF8052920838990F9626F58211628B6D8DECBCD1389AB/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA6235F6977391952DBBCDADF2B4A76CF712FBA11719A17EA58C2171DAC4641E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+		<div class="line" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)">
+			<div class="img" style="background-image:url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3B909145E05EC6E0E3F3004B2BCECC74C39D0AE42DB64C81C5088160F636DA6E/scale?width=400&aspectRatio=0.71&format=jpeg)"></div>
+		</div>
+
+	</div>
+</div>
+</div>
 
 
-<main>
-      <section>
-        <div>
-          <h1>Jus' make things.<br />Put them on the internet.</h1>
-          <p>
-            Sign up for a newsletter all about building in public, sharing your
-            work, and ignoring the haters.
-          </p>
-          <form action="">
-            <input type="email" required placeholder="creator@hotmail.com" />
-            <button type="submit">sign up</button>
-          </form>
-        </div>
-      </section>
-      <div class="keypad">
-        <div class="keypad__base">
-          <img src="https://assets.codepen.io/605876/keypad-base.png?format=auto&quality=86" alt="" />
-        </div>
-        <button id="one" class="key keypad__single keypad__single--left">
-          <span class="key__mask">
-            <span class="key__content">
-              <span class="key__text">ok</span>
-              <img src="https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86" alt="" />
-            </span>
-          </span>
-        </button>
-        <button id="two" class="key keypad__single">
-          <span class="key__mask">
-            <span class="key__content">
-              <span class="key__text">go</span>
-              <img src="https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86" alt="" />
-            </span>
-          </span>
-        </button>
-        <button id="three" class="key keypad__double">
-          <span class="key__mask">
-            <span class="key__content">
-              <span class="key__text">create.</span>
-              <img src="https://assets.codepen.io/605876/keypad-double.png?format=auto&quality=86" alt="" />
-            </span>
-          </span>
-        </button>
-      </div>
-    </main>
-    <a
-      aria-label="Follow Jhey"
-      class="bear-link"
-      href="https://twitter.com/intent/follow?screen_name=jh3yy"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <svg
-        class="w-9"
-        viewBox="0 0 969 955"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="161.191"
-          cy="320.191"
-          r="133.191"
-          stroke="currentColor"
-          stroke-width="20"
-        ></circle>
-        <circle
-          cx="806.809"
-          cy="320.191"
-          r="133.191"
-          stroke="currentColor"
-          stroke-width="20"
-        ></circle>
-        <circle
-          cx="695.019"
-          cy="587.733"
-          r="31.4016"
-          fill="currentColor"
-        ></circle>
-        <circle
-          cx="272.981"
-          cy="587.733"
-          r="31.4016"
-          fill="currentColor"
-        ></circle>
-        <path
-          d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
-          fill="currentColor"
-        ></path>
-        <rect
-          x="310.42"
-          y="448.31"
-          width="343.468"
-          height="51.4986"
-          fill="#FF1E1E"
-        ></rect>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
-          fill="currentColor"
-        ></path>
-      </svg>
-    </a>
+
+CSS: 
 
 
-
-
-    CSS : 
-
-
-    @import url('https://unpkg.com/normalize.css') layer(normalize);
-
-@layer normalize, base, demo, debug, exploding;
-
-@layer exploding {
-  [data-exploded='true'] {
-    section {
-      transition-delay: 0s;
-    }
-    .keypad {
-      translate: calc(-50% - 1rem) 0;
-      transition-delay: 0s, 0.26s;
-      @media (max-width: 768px) {
-        translate: 0 calc(50% + 1rem);
-      }
-    }
-    .keypad__base {
-      --depth: 2.5;
-    }
-    .keypad__single {
-      --depth: -1;
-    }
-    .keypad__single--left {
-      --depth: -2;
-    }
-    .keypad__double {
-      --depth: 0;
-    }
-
-    .keypad__base,
-    .key {
-      translate: 0 calc(var(--depth) * 10vh);
-      transition-delay: 0.52s;
-    }
-  }
-
-  .keypad {
-    transition-delay: 0.26s, 0.52s;
-  }
-
-  .key,
-  .keypad__base {
-    transition-property: translate;
-    transition-duration: 0.26s;
-    transition-timing-function: ease-out;
-  }
-
-  [data-exploded='true'] .key::after {
-    opacity: 1;
-    transition-delay: 0.52s;
-  }
-
-  .key::after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    opacity: 0;
-    inset: 0;
-    transition-property: opacity;
-    transition-duration: 0.26s;
-    transition-timing-function: ease-out;
-    background: repeating-linear-gradient(
-      -45deg,
-      #0000 0 5px,
-      hsl(220 100% 70%) 5px 6px
-    );
-  }
-  /* timings */
+/********************************************/
+/********************************************/
+/* Please ❤ this if you like it! */
+/* Follow Me https://codepen.io/designfenix */
+/********************************************/
+/********************************************/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+:root {
+	--duration: 15s;
 }
 
-@layer debug {
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      letter-spacing: -0.05rem;
-      line-height: 1;
-    }
-
-    p {
-      opacity: 0.7;
-      font-weight: 300;
-    }
-
-    form {
-      display: flex;
-      gap: 0.5rem;
-
-      input {
-        flex: 1;
-        padding: 0.5rem 0.75rem;
-        background: canvas;
-        border: 1px solid color-mix(in oklch, canvasText, #0000 75%);
-        border-radius: 6px;
-        outline-color: red;
-      }
-
-      button {
-        padding-inline: 1.5rem;
-        border-radius: 6px;
-        background: canvas;
-        border: 1px solid color-mix(in oklch, canvasText, #0000 75%);
-        cursor: pointer;
-        color: canvasText;
-        font-size: 0.875rem;
-      }
-    }
-
-    section {
-      transition-property: opacity, filter;
-      transition-duration: 0.26s;
-      transition-delay: 0.26s;
-      transition-timing-function: ease-out;
-    }
-  }
-
-  [data-exploded='true'] section {
-    opacity: 0;
-    filter: blur(4px);
-  }
-
-  @media (max-width: 768px) {
-    .keypad {
-      order: 1;
-    }
-    section {
-      order: 2;
-    }
-  }
-
-  section,
-  section > div {
-    width: 50ch;
-    max-width: calc(100vw - 2rem);
-  }
+button {
+	position: fixed;
+	top: 1vw;
+	right: 1vw;
+	z-index: 5;
+	background: none;
+	border: 0;
+	outline: none;
+	color: white;
+	cursor: pointer;
 }
 
-@layer demo {
-  :root {
-    --travel: 20;
-  }
-  .keypad {
-    position: relative;
-    /* outline: 4px dashed red;
-    outline-offset: 2px; */
-    aspect-ratio: 400 / 310;
-    display: flex;
-    place-items: center;
-    width: clamp(280px, 35vw, 400px);
-    -webkit-tap-highlight-color: #0000;
-    transition-property: translate, transform;
-    transition-duration: 0.26s;
-    transition-timing-function: ease-out;
-    transform-style: preserve-3d;
-
-    .key {
-      transform-style: preserve-3d;
-      border: 0;
-      background: #0000;
-      padding: 0;
-      cursor: pointer;
-      outline: none;
-
-      &[data-pressed='true'],
-      &:active {
-        .key__content {
-          translate: 0 calc(var(--travel) * 1%);
-        }
-      }
-    }
-
-    .key__content {
-      width: 100%;
-      display: inline-block;
-      height: 100%;
-      transition: translate 0.12s ease-out;
-      container-type: inline-size;
-    }
-
-    .keypad__single .key__text {
-      width: 52%;
-      height: 62%;
-      translate: 45% -16%;
-    }
-
-    .key__text {
-      height: 46%;
-      width: 86%;
-      position: absolute;
-      font-size: 12cqi;
-      z-index: 21;
-      top: 5%;
-      left: 0;
-      mix-blend-mode: normal;
-      /* mix-blend-mode: overlay soft-light; */
-      color: hsl(0 0% 94%);
-      translate: 8% 10%;
-      transform: rotateX(36deg) rotateY(45deg) rotateX(-90deg) rotate(0deg);
-      text-align: left;
-      padding: 1ch;
-    }
-
-    .keypad__single {
-      position: absolute;
-      width: 40.5%;
-      left: 54%;
-      bottom: 36%;
-      height: 46%;
-      clip-path: polygon(
-        0 0,
-        54% 0,
-        89% 24%,
-        100% 70%,
-        54% 100%,
-        46% 100%,
-        0 69%,
-        12% 23%,
-        47% 0%
-      );
-      mask: url(https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86) 50% 50% / 100% 100%;
-
-      &.keypad__single--left {
-        left: 29.3%;
-        bottom: 54.2%;
-      }
-
-      .key__text {
-        font-size: 18cqi;
-      }
-
-      img {
-        top: 0;
-        opacity: 1;
-        width: 96%;
-        position: absolute;
-        left: 50%;
-        translate: -50% 1%;
-      }
-    }
-
-    .key__mask {
-      width: 100%;
-      height: 100%;
-      display: inline-block;
-    }
-
-    .keypad__double {
-      position: absolute;
-      background: hsl(10 100% 50% / 0);
-      width: 64%;
-      height: 65%;
-      left: 6%;
-      bottom: 17.85%;
-      clip-path: polygon(
-        34% 0,
-        93% 44%,
-        101% 78%,
-        71% 100%,
-        66% 100%,
-        0 52%,
-        0 44%,
-        7% 17%,
-        30% 0
-      );
-      mask: url(https://assets.codepen.io/605876/keypad-double.png?format=auto&quality=86) 50% 50% / 100% 100%;
-      img {
-        top: 0;
-        opacity: 1;
-        width: 99%;
-        position: absolute;
-        left: 50%;
-        translate: -50% 1%;
-      }
-    }
-
-    .key img {
-      filter: hue-rotate(calc(var(--hue, 0) * 1deg))
-        saturate(var(--saturate, 1)) brightness(var(--brightness, 1));
-    }
-
-    .keypad__base {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    img {
-      transition: translate 0.12s ease-out;
-      width: 100%;
-    }
-  }
-  .reference {
-    pointer-events: none;
-    opacity: 0;
-    z-index: 2;
-  }
+body {
+	background: #131520;
+	overflow: hidden;
+}
+.wrapper-images {
+	display: flex;
+	flex-direction: column;
+	height: 150vh;
+	justify-content: center;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	opacity: 0.8;
+	transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(10deg)
+		rotateX(-10deg);
+}
+.images-line {
+	animation: runner var(--duration) linear infinite;
+	display: flex;
+	transform: translateX(23%);
+	&:nth-child(even) {
+		animation-duration: calc(var(--duration) * 1.5);
+	}
+	.line {
+		background-position: 50% 50%;
+		background-size: cover;
+		flex: none;
+		height: 29vh;
+		margin: clamp(10px, 2vw, 20px);
+		width: 20vh;
+		position: relative;
+		transition: ease-in-out all 0.3s;
+		border-radius: 1rem;
+		.img {
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-position: 50% 50%;
+			background-size: cover;
+			transition: ease-in-out all 0.3s;
+			overflow: hidden;
+			border-radius: 1rem;
+		}
+		&:hover {
+			.img {
+				cursor: pointer;
+				transform: scale(1.1) translatez(0px);
+			}
+			&:after {
+				filter: blur(35px) opacity(0.8);
+			}
+		}
+		&:after {
+			content: "";
+			background: inherit;
+			display: block;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			top: 3vh;
+			position: absolute;
+			background-size: cover;
+			z-index: -1;
+			transition: ease-in-out all 0.3s;
+			filter: blur(25px) opacity(0.8);
+		}
+	}
 }
 
-@layer base {
-  :root {
-    --font-size-min: 16;
-    --font-size-max: 20;
-    --font-ratio-min: 1.2;
-    --font-ratio-max: 1.33;
-    --font-width-min: 375;
-    --font-width-max: 1500;
-  }
-
-  html {
-    color-scheme: light dark;
-  }
-
-  [data-theme='light'] {
-    color-scheme: light only;
-  }
-
-  [data-theme='dark'] {
-    color-scheme: dark only;
-  }
-
-  :where(.fluid) {
-    --fluid-min: calc(
-      var(--font-size-min) * pow(var(--font-ratio-min), var(--font-level, 0))
-    );
-    --fluid-max: calc(
-      var(--font-size-max) * pow(var(--font-ratio-max), var(--font-level, 0))
-    );
-    --fluid-preferred: calc(
-      (var(--fluid-max) - var(--fluid-min)) /
-        (var(--font-width-max) - var(--font-width-min))
-    );
-    --fluid-type: clamp(
-      (var(--fluid-min) / 16) * 1rem,
-      ((var(--fluid-min) / 16) * 1rem) -
-        (((var(--fluid-preferred) * var(--font-width-min)) / 16) * 1rem) +
-        (var(--fluid-preferred) * var(--variable-unit, 100vi)),
-      (var(--fluid-max) / 16) * 1rem
-    );
-    font-size: var(--fluid-type);
-  }
-
-  *,
-  *:after,
-  *:before {
-    box-sizing: border-box;
-  }
-
-  body {
-    background: light-dark(#fff, #000);
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
-      Helvetica, Arial, sans-serif, system-ui;
-  }
-
-  body::before {
-    --size: 45px;
-    --line: color-mix(in hsl, canvasText, transparent 80%);
-    content: '';
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    background: linear-gradient(
-          90deg,
-          var(--line) 1px,
-          transparent 1px var(--size)
-        )
-        calc(var(--size) * 0.36) 50% / var(--size) var(--size),
-      linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0%
-        calc(var(--size) * 0.32) / var(--size) var(--size);
-    mask: linear-gradient(-20deg, transparent 50%, white);
-    top: 0;
-    transform-style: flat;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  .bear-link {
-    color: canvasText;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    width: 48px;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    opacity: 0.8;
-  }
-
-  :where(.x-link, .bear-link):is(:hover, :focus-visible) {
-    opacity: 1;
-  }
-
-  .bear-link svg {
-    width: 75%;
-  }
-
-  /* Utilities */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
+@keyframes runner {
+	to {
+		transform: translateX(-10.4%);
+	}
 }
 
-div.tp-dfwv {
-  width: 280px;
-}
-
-
-.keypad {
-  opacity: 0;
+/*Dev*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+.dev {
+	font-family: "Poppins", sans-serif;
+	position: fixed;
+	font-size: clamp(8px, 3vw, 14px);
+	bottom: 1vw;
+	left: 1vw;
+	padding: 1em;
+	color: #111;
+	background-color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	z-index: 100;
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #111;
+		transition: ease all 0.3s;
+		&:hover {
+			color: #ef5350;
+			text-decoration: underline;
+		}
+	}
+	span {
+		display: inline-block;
+		transition: ease all 0.3s;
+		color: #ef5350;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
 }
 
 
 
+______________________________________
+
+JS :
+
+
+/*nope*/
+/*$(document).mousemove(function (event) {
+	let xPos = event.clientX / $(window).width() - 0.5,
+		yPos = event.clientY / $(window).height() - 0.5;
+
+	gsap.to($(".wrapper-images"), 0.6, {
+		rotateY: (xPos * 10) / 2 + "deg",
+		rotateX: (yPos * 10) / -2 + "deg",
+		ease: Power4.easeOut
+	});
+});*/
 
 
 
 
---
-
-JS : 
-
-
-import { Pane } from 'https://cdn.skypack.dev/tweakpane@4.0.4'
-
-const config = {
-  theme: 'system',
-  muted: false,
-  exploded: false,
-  one: {
-    travel: 26,
-    text: 'ok',
-    key: 'o',
-    hue: 114,
-    saturation: 1.4,
-    brightness: 1.2,
-    buttonElement: document.querySelector('#one'),
-    textElement: document.querySelector('#one .key__text'),
-  },
-  two: {
-    travel: 26,
-    text: 'go',
-    key: 'g',
-    hue: 0,
-    saturation: 0,
-    brightness: 1.4,
-    buttonElement: document.querySelector('#two'),
-    textElement: document.querySelector('#two .key__text'),
-  },
-  three: {
-    travel: 18,
-    text: 'create.',
-    key: 'Enter',
-    hue: 0,
-    saturation: 0,
-    brightness: 0.4,
-    buttonElement: document.querySelector('#three'),
-    textElement: document.querySelector('#three .key__text'),
-  },
-}
-
-const clickAudio = new Audio(
-  'https://cdn.freesound.org/previews/378/378085_6260145-lq.mp3'
-)
-clickAudio.muted = config.muted
-
-const ctrl = new Pane({
-  title: 'config',
-  expanded: false,
-})
-
-const update = () => {
-  document.documentElement.dataset.theme = config.theme
-}
-
-const sync = (event) => {
-  if (
-    !document.startViewTransition ||
-    event.target.controller.view.labelElement.innerText !== 'theme'
-  )
-    return update()
-  document.startViewTransition(() => update())
-}
-
-ctrl
-  .addBinding(config, 'muted')
-  .on('change', () => (clickAudio.muted = config.muted))
-
-ctrl
-  .addBinding(config, 'exploded', {
-    label: 'explode',
-  })
-  .on(
-    'change',
-    () => (document.documentElement.dataset.exploded = config.exploded)
-  )
-
-ctrl.addBinding(config, 'theme', {
-  label: 'theme',
-  options: {
-    system: 'system',
-    light: 'light',
-    dark: 'dark',
-  },
-})
-
-let recorder
-const ids = ['one', 'two', 'three']
-
-const recordKey = (config) => (event) => {
-  config.key = event.key
-  ctrl.refresh()
-}
-
-for (const id of ids) {
-  const keyFolder = ctrl.addFolder({ title: `key ${id}`, expanded: false })
-  keyFolder
-    .addBinding(config[id], 'text', {
-      label: 'text',
-    })
-    .on('change', () => {
-      config[id].textElement.innerText = config[id].text
-    })
-  config[id].buttonElement.style.setProperty('--travel', config[id].travel)
-  config[id].buttonElement.style.setProperty(
-    '--saturate',
-    config[id].saturation
-  )
-  config[id].buttonElement.style.setProperty('--hue', config[id].hue)
-  config[id].buttonElement.style.setProperty(
-    '--brightness',
-    config[id].brightness
-  )
-  keyFolder
-    .addBinding(config[id], 'travel', {
-      min: 1,
-      max: 50,
-      step: 1,
-    })
-    .on('change', () => {
-      config[id].buttonElement.style.setProperty('--travel', config[id].travel)
-    })
-  keyFolder
-    .addBinding(config[id], 'hue', {
-      min: 0,
-      max: 360,
-      step: 1,
-    })
-    .on('change', () => {
-      config[id].buttonElement.style.setProperty('--hue', config[id].hue)
-    })
-  keyFolder
-    .addBinding(config[id], 'saturation', {
-      min: 0,
-      max: 2,
-      step: 0.1,
-    })
-    .on('change', () => {
-      config[id].buttonElement.style.setProperty(
-        '--saturate',
-        config[id].saturation
-      )
-    })
-  keyFolder
-    .addBinding(config[id], 'brightness', {
-      min: 0,
-      max: 2,
-      step: 0.1,
-    })
-    .on('change', () => {
-      config[id].buttonElement.style.setProperty(
-        '--brightness',
-        config[id].brightness
-      )
-    })
-  keyFolder.addBinding(config[id], 'key', {
-    disabled: true,
-  })
-  keyFolder.addButton({ title: 'Record Key' }).on('click', () => {
-    if (recorder) window.removeEventListener('keypress', recorder)
-    recorder = recordKey(config[id])
-    window.addEventListener('keypress', recorder, { once: true })
-  })
-  config[id].buttonElement.addEventListener('pointerdown', () => {
-    if (!config.muted) {
-      clickAudio.currentTime = 0
-      clickAudio.play()
-    }
-  })
-}
-
-// handle the key bindings
-window.addEventListener('keydown', (event) => {
-  for (const id of ids) {
-    if (event.key === config[id].key) {
-      config[id].buttonElement.dataset.pressed = true
-      if (!config.muted) {
-        clickAudio.currentTime = 0
-        clickAudio.play()
-      }
-    }
-  }
-})
-window.addEventListener('keyup', (event) => {
-  for (const id of ids) {
-    if (event.key === config[id].key)
-      config[id].buttonElement.dataset.pressed = false
-  }
-})
-
-ctrl.on('change', sync)
-update()
-
-document.querySelector('.keypad').style.setProperty('opacity', 1)
-
-document.querySelector('form').addEventListener('submit', event => event.preventDefault())

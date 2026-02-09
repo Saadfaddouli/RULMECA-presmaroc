@@ -1,29 +1,33 @@
 {
   "story": {
-    "sectionLabel": "Histoire ABILIS",
+    "sectionLabel": "Qui sommes nous ABILIS",
     "badge": "Notre parcours",
-    "mainTitle": "Histoire",
+    "mainTitle": "Qui sommes nous",
     "subtitle": "ABILIS",
-    "intro": "De nos débuts automobile à la représentation RULMECA au Maroc.",
-    "2019": {
-      "title": "ABILIS — Débuts automobile",
-      "short": "Représentant WHEELSECURE dans le domaine automobile."
+    "intro": "Importateur et distributeur de la marque Wheeleseucre ( 1er bouclier anti-crevraison ) deuis 2021 au maroc",
+    "2021": {
+      "title": "Création Abilis Auto Africa",
+      "short": "Société marocaine, siège à Casablanca. Distribution Wheelsecure, lancement réussi au Maroc."
     },
-    "2024": {
-      "title": "BTA Services",
-      "short": "Association avec le bureau central d'approvisionnement en France. Capacité de financement et garant des approvisionnements."
+    "2022": {
+      "title": "Expansion Afrique",
+      "short": "Gabon avec SOGAFRIC, puis Cameroun, Sénégal, Mauritanie et Côte d'Ivoire."
+    },
+    "2023": {
+      "title": "Implantation Amérique",
+      "short": "Ouverture du marché mexicain, première présence en Amérique."
     },
     "2026": {
-      "title": "ABILIS INDUSTRIE",
-      "short": "Création pour développer l'activité auprès des industriels : minier, BTP."
+      "title": "Pénétration secteur minier Wheelsecure",
+      "short": "Pénétration de nouveaux marchés dans le secteur minier pour Wheelsecure, au Maroc et en Afrique."
     },
     "bureau": {
-      "title": "Le bureau au Maroc",
-      "short": "Capacités, ambition et structure pour représenter la marque sur le marché marocain."
+      "title": "Centrales d'achat France",
+      "short": "Partenariat SOGAFRIC : sourcing et logistique à l'échelle internationale."
     },
     "202603": {
-      "title": "Représentation RULMECA au Maroc",
-      "short": "2026-03 : représentation officielle RULMECA face au marché marocain."
+      "title": "Représentation industrielle",
+      "short": "Représentation de marques industrielles et rechanges au service des secteurs miniers, carrières et BTP."
     }
   },
   "nav": {
@@ -32,11 +36,17 @@
     "poweredBy": "Powered by RULMECA"
   },
   "hero": {
-    "line": "Structuration du bureau RULMECA — Maroc",
-    "mainTitle": "ABILIS INDUS",
+    "line": "PROJET DE PARTENARIAT INDUSTRIEL",
+    "mainTitle": "ABILIS INDUSTRIE",
     "mainTitleHighlight": "Implantation & Déploiement Territorial",
     "subtitle": "Plan stratégique d'activation et de représentation.",
-    "cta": "Entrer dans la présentation"
+    "cta": "Entrer dans la présentation",
+    "titleSubtitle": "Présentation de projet de partenariat",
+    "titleAbilis": "ABILIS",
+    "titleIndustrie": "INDUSTRIE",
+    "department": "Département industrie",
+    "welcome": "Bienvenue",
+    "tapeLoop": "PARTENARIAT RULMECA 2026 ✦ PARTENARIAT RULMECA 2026 ✦ PARTENARIAT RULMECA 2026 ✦ "
   },
   "geo": {
     "title": "Couverture territoriale",
@@ -55,7 +65,21 @@
     "sidebar": { "navigation": "Filtres", "all": "Tous", "phaseImplantation": "Phase implantation" },
     "kpi": { "sitesActifs": "Sites actifs", "enValidation": "En validation", "enDeploiement": "En déploiement", "potentielMoyen": "Potentiel moyen" },
     "insight": { "siteDetail": "Détail site", "city": "Ville", "segment": "Segment", "status": "Statut", "scorePotentiel": "Score potentiel", "nextAction": "Prochaine action" },
-    "map": { "serversActive": "Sites actifs", "geolocationSubtitle": "Géolocalisation des sites stratégiques." }
+    "map": { "serversActive": "Sites actifs", "geolocationSubtitle": "Géolocalisation des sites stratégiques." },
+    "potentielBadge": "Potentiel",
+    "potentielClientParAn": "Potentiel client par an",
+    "potentielIntro": "Synthèse du potentiel adressable sur le territoire marocain par typologie et par année.",
+    "year2024": "2024",
+    "year2025": "2025",
+    "year2026": "2026",
+    "yearCible": "Cible",
+    "potentiel2024": "—",
+    "potentiel2025": "—",
+    "potentiel2026": "—",
+    "potentielCible": "—",
+    "portefeuilleProduitsBadge": "Produits",
+    "portefeuilleProduitsTitle": "Portefeuille produits",
+    "portefeuilleProduitsIntro": "Gamme RULMECA : rouleaux, supports, bandes et équipements pour convoyeurs."
   },
   "chapters": {
     "visionCadre": { "title": "Vision & Cadre", "subtitle": "Vision, mission locale, cadre de structuration, ambition territoriale." },
@@ -87,7 +111,78 @@
     "badge": "Marché & positionnement",
     "title": "Réalité du marché marocain",
     "intro": "Défis et troubles du marché que RULMECA contourne — le fournisseur s'y reconnaît et a besoin d'un partenaire de confiance.",
+    "sectorMining": "Secteur minier & carrière",
+    "sectorBTP": "Secteur BTP",
+    "sectorCimenterie": "Secteur cimenterie",
+    "moyensBadge": "Moyens",
+    "moyensHumainsTitle": "Moyens humains et logistiques",
+    "moyensHumainsIntro": "Équipe, logistique et capacités pour représenter la marque sur le terrain.",
+    "portefeuilleBadge": "Portefeuille",
+    "portefeuilleTitle": "Portefeuille clients",
+    "portefeuilleTypologies": "Typologies : mines, carrières, cimenteries, BTP.",
+    "categoriesTitle": "Répartition par typologie",
+    "categoriesIntro": "Grands comptes industriels ciblés par typologie.",
+    "typologyCimenteries": "Cimenteries",
+    "typologyMines": "Mines",
+    "typologyOcp": "OCP",
+    "typologyEnergie": "Énergie",
+    "clientNovacim": "NOVACIM",
+    "clientLafarge": "Lafarge",
+    "clientCimentsDuMaroc": "Ciments du Maroc",
+    "clientCimat": "CIMAT",
+    "clientManagem": "MANAGEM",
+    "clientAya": "AYA",
+    "clientCmt": "CMT",
+    "clientSacem": "SACEM",
+    "clientOfas": "OFAS",
+    "clientOcp": "OCP",
+    "clientSafiec": "SAFIEC",
+    "clientTaqa": "TAQA",
+    "prospectNew": "Nouveau",
+    "prospectInProgress": "En cours",
+    "prospectDone": "Conclu",
+    "cityCasablanca": "Casablanca",
+    "citySafi": "Safi",
+    "cityMarrakech": "Marrakech",
+    "cityKhouribga": "Khouribga",
+    "cityBenguerir": "Benguerir",
+    "cityAgadir": "Agadir",
+    "citySettat": "Settat",
+    "cityElJadida": "El Jadida",
+    "prospectNovacim": "Prospection convoyeurs cimenterie — site Safi.",
+    "prospectLafarge": "Partenaire actif — approvisionnement bandes et rouleaux.",
+    "prospectCimentsDuMaroc": "Prospection en cours — région Souss.",
+    "prospectCimat": "Nouveau contact — qualification en cours.",
+    "prospectManagem": "Déploiement sites Guemassa et Draa Lasfar.",
+    "prospectAya": "Prospection mines — équipements convoyeurs.",
+    "prospectCmt": "Premier contact — Carrières et mines.",
+    "prospectSacem": "Prospection carrières — Benguerir.",
+    "prospectOfas": "OCP — approvisionnement régulier Khouribga.",
+    "prospectOcp": "Grand compte — multi-sites Casablanca et phosphate.",
+    "prospectSafiec": "Prospection énergie — site Safi.",
+    "prospectTaqa": "Nouveau prospect — énergie et utilities.",
+    "categoriesSubtitle": "Prospections clients et leurs villes.",
+    "crmTitle": "Actions en cours par client",
+    "crmDevis": "Devis",
+    "crmConsultation": "Consultation",
+    "crmSignature": "Signature",
+    "crmDrawerClose": "Fermer",
+    "crmDrawerConsultationActions": "Consultation et actions",
+    "crmDrawerItemCode": "Code article",
+    "crmDrawerDesignation": "Désignation",
+    "crmDrawerLongDesignation": "Désignation longue",
+    "crmDrawerUnit": "Unité",
+    "crmDrawerRequestedQty": "Qté demandée",
+    "crmDrawerPriceMAD": "Prix unitaire (MAD)",
     "ambition": "ABILIS Industrie : votre partenaire structurant sur le marché marocain. Interface locale, sourcing sécurisé, garantie financière — fiabilité long terme.",
+    "btaTitle": "Central d'achat BTA Services",
+    "centralEuropeTitle": "Central d'achat en Europe",
+    "btaShort": "Partenariat avec le bureau central d'approvisionnement en France. Achats d'ABILIS Industrie régularisés auprès de RULMECA : commande, financement et livraison sécurisés.",
+    "processTitle": "Processus d'achat régularisé",
+    "processStep1": "Commande ABILIS auprès de RULMECA",
+    "processStep2": "Régularisation rapide des achats",
+    "processStep3": "Douane, TVA & frais d'import pris en charge",
+    "processStep4": "Livraison sécurisée au Maroc",
     "timeline": {
       "contrefacon": {
         "theme": "Contrefaçon",

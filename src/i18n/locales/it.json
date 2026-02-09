@@ -1,4 +1,8 @@
 {
+  "story": {
+    "sectionLabel": "Chi siamo ABILIS",
+    "mainTitle": "Chi siamo"
+  },
   "nav": {
     "openPresentation": "Apri presentazione",
     "downloadSummary": "Scarica riepilogo",
@@ -9,7 +13,13 @@
     "mainTitle": "ABILIS INDUS",
     "mainTitleHighlight": "Impianto & Sviluppo Territoriale",
     "subtitle": "Piano strategico di attivazione e rappresentanza.",
-    "cta": "Entra nella presentazione"
+    "cta": "Entra nella presentazione",
+    "titleSubtitle": "Presentazione progetto di partenariato",
+    "titleAbilis": "ABILIS",
+    "titleIndustrie": "INDUSTRIA",
+    "department": "Dipartimento industria",
+    "welcome": "Benvenuto",
+    "tapeLoop": "PARTENARIATO RULMECA 2026 ✦ PARTENARIATO RULMECA 2026 ✦ PARTENARIATO RULMECA 2026 ✦ "
   },
   "geo": {
     "title": "Copertura territoriale",
